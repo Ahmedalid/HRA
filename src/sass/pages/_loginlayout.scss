@@ -1,0 +1,56 @@
+// Start login-navbar
+.login-navbar {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 0 10px;
+  margin-top: 30px;
+  &-lang {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease-in-out;
+    width: 40px;
+    height: 40px;
+    background-color: $sub-color;
+    border-radius: 50%;
+    cursor: pointer;
+    &:hover {
+      background-color: $blue-green;
+      color: white;
+    }
+  }
+}
+// End login-navbar
+// Start Custom Input
+.input-custom {
+  background-color: #f5f5f5;
+  border: 1px solid transparent;
+  border-radius: 0.7rem;
+  height: 45px;
+  padding: 5px 15px;
+  outline: none;
+  width: 100%;
+  &:focus {
+    border-color: $blue-green;
+  }
+  &:hover {
+    border-color: $blue-green;
+  }
+}
+.input-custom:focus-within,
+.input-custom,
+.input-custom:focus,
+.input-custom:focus-visible {
+  box-shadow: none;
+}
+// End Custom Input
+
+.login-card {
+  width: 500px;
+  z-index: 100;
+  @media (max-width: 601px) {
+    & {
+      width: 100%;
+    }
+  }
+}

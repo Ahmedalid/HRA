@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+@import "./sass/main.scss";
+
+:root {
+  --sub-color: #e9e9ec;
+  --black-color: #000;
+  --blue-green: #5856d6;
+  --black: #5b73e8;
+}
+::-webkit-scrollbar {
+  width: 0.4em;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background: $blue-green;
+  border-radius: 16px;
+  box-shadow: inset 2px 2px 2px $blue-green,
+    inset -2px -2px 2px rgba(0, 61, 59, 0.3);
+}
+::selection {
+  background: $black;
+  color: $white;
+}
+
+html {
+  font-family: "Tajawal", sans-serif;
+}
+body {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 500;
+  overflow-x: hidden !important;
+}
+
+.hoverable-small {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+  border: 0px solid #000;
+  border-radius: 50%;
+}
+
+.img-small {
+  width: 100%;
+  border-radius: 50%;
+  transition: transform 1.5s;
+}
+
+.hoverable-small .background {
+  position: absolute;
+  display: none;
+  inset: 0;
+  background-color: #ffffff80;
+  pointer-events: none;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: $blue-green;
+  box-shadow: 0 0 0 0.25rem transparent;
+}
+.form-control::placeholder {
+  font-size: 0.9rem;
+}
+
+.custom-tab-link {
+  background-color: $blue-green;
+  color: $white;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: 1px solid $white;
+}
+.custom-tab-link.active {
+  background-color: $black !important;
+}
+.custom-tab-link:hover {
+  background-color: $black !important;
+  color: $white;
+}
+
+.btn-back button {
+  color: $blue-green;
+  background-color: #e6e6ff !important;
+  border-radius: 4px;
+  box-shadow: none;
+  padding: 10px 15px;
+}
+
+.list-group-item-custom.active {
+  background-color: $blue-green;
+  border-color: $blue-green;
+}
+.list-group-item-custom:hover {
+  background-color: $blue-green;
+  border-color: $blue-green;
+  color: $white;
+}
+.list-group-item-custom {
+  text-align: center;
+  font-size: 14px;
+}
+.p-multiselect-panel {
+  z-index: 2000 !important;
+}
+.p-multiselect.p-multiselect-chip .p-multiselect-token {
+  padding: 0.075rem 0.75rem;
+}
+.p-multiselect .p-multiselect-label {
+  padding: 0.375rem 0.75rem;
+}
+.form-check-input:checked {
+  background-color: $blue-green;
+  border-color: $blue-green;
+}
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.25rem transparent;
+}
+
+.modal-header .btn-close {
+  margin: 0 !important;
+}
+.modal.modal-index .modal-backdrop {
+  z-index: 99999 !important;
+}
+
+.bg-color {
+  background-color: #259995 !important;
+}
+.d-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-shado{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.font-30{
+  font-size: 30px;
+}
+#formBasicEmail{
+  border: 2px #259995 solid !important;
+}

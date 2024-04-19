@@ -1,0 +1,54 @@
+.sidebar-custom {
+  z-index: 1023;
+  overflow-y: auto;
+  max-height: 100vh;
+  .ps-sidebar-container {
+    background-color: $white;
+  }
+  height: 100%;
+  .ps-open {
+    background-color: $alice-blue;
+  }
+  .ps-menu-button {
+    padding-left: 1rem;
+    padding-right: 1.5rem !important;
+    border-radius: 0.5rem !important;
+    &.active,
+    &:hover {
+      background-color: $blue-green !important;
+      color: $white !important;
+    }
+  }
+  .ps-menuitem-root {
+    margin: 0.2rem 0;
+  }
+  .ps-submenu-root {
+    border-radius: 0.5rem;
+    .ps-menu-button {
+      &.active,
+      &:hover {
+        span {
+          background-color: $blue-green !important;
+          color: $white !important;
+        }
+      }
+    }
+  }
+  .ps-submenu-content {
+    background-color: $alice-blue;
+    border-radius: 0.5rem;
+    padding: 0;
+    .ps-menu-button {
+      font-size: small;
+      &.active,
+      &:hover {
+        background-color: $blue-green-alt !important;
+        color: $white !important;
+        span {
+          background-color: $blue-green-alt !important;
+          color: $white !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import "./base/base";
+@import "./base/color_variables";
+@import "./base/utilities";
+@import "./base/classes";
+
+// Components
+@import "./components/sidebar";
+@import "./components/loading";
+@import "./components/tables";
+@import "./components/dropDown";
+@import "./components/inputFile";
+@import "./components/status-card";
+
+// Pages
+@import "./pages/loginlayout";
+@import "./pages/not_allowed_page";
+@import "./pages/not_found_page";

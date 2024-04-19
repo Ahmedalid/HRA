@@ -1,0 +1,35 @@
+.dropdown-custom {
+  & > div {
+    padding: 0.5rem;
+    padding-bottom: 0.2rem;
+    border-radius: 0.7rem;
+  }
+  .dropdown-item {
+    border-radius: 0.3rem;
+    color: $blue-green;
+    transition: 0.2s ease;
+    background-color: $alice-blue;
+    margin-bottom: 0.3rem;
+    &:hover {
+      background-color: $blue-green;
+      color: $white;
+    }
+    &.logout {
+      color: $danger;
+    }
+    &.logout:hover {
+      background-color: $blue-green;
+      color: $white;
+    }
+  }
+  .dropdown-toggle::after {
+    display: none;
+  }
+}
+body[dir="ltr"] .dropdown-menu[data-bs-popper] {
+  left: auto;
+  right: 0;
+}
+body[dir="rtl"] .dropdown-menu .dropdown-item {
+  text-align: right;
+}
